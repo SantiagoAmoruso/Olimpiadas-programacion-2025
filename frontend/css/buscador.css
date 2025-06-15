@@ -1,0 +1,171 @@
+.buscador{
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    max-height: 600px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+/* Botones de Ida y vuelta, Ida y Multidestino*/
+.tipos button{
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid #e2e8f06b;
+    border-radius: 20px;
+    background-color: #f9fafb7f;
+    padding: 10px;
+}
+.tipos .activo{
+    border: 1px solid #0f172ab3;
+    background-color: #0f172a;
+    color: #f9fafb;
+}
+
+/* Buscador*/
+.formulario{
+    margin-top: 10px;
+    color: #0f172a;
+    font-weight: 600;
+    background-color: #f9fafbcf;
+    min-width: 700px;
+    border-radius: 20px;
+    gap: 15px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+}
+
+
+/* Origen y destino */
+.desdeDonde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-intercambio{
+    margin: 8px;
+    margin-top: 25px;
+    width: 128px;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+}
+.inputs{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    border: 1px solid #0f172a;
+    border-radius: 5px;
+}
+.inputs input{
+    margin-left: 5px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    color: #0f172a;
+}
+.inputs input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.inputs input::placeholder{
+    color: #475569;
+    font-style: italic;
+}
+.icono{
+    width: 12px;
+    object-fit: contain;
+}
+
+
+/* Fechas */
+.contenedorFechas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fechas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+}
+.fechas .inputs{
+    position: relative;
+}
+.inputs input[type="date"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+   opacity: 0; 
+}
+
+
+/* Pasajeros y clase */
+.pasajerosClase .inputs label{
+    margin-left: 5px;
+}
+
+
+/* Boton */
+.btn-contenedor{
+    display: grid;
+    align-content: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 17px;
+    color: #0ea5e9;
+    border: 2px solid #0ea5e9;
+    cursor: pointer;
+}
+.btn .icono{
+    height: 15px;
+    width: 18px;
+}
+.btn:active{
+    filter: invert();
+}
+
+
+#multidestinoExtra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 700px;
+  margin: auto;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.tramo {
+  min-width: 700px;
+  background-color: #f9fafbcf;
+  border-radius: 20px;
+  position: relative;
+}
+
+.btn-eliminar-tramo {
+  margin-top: 5px;
+  margin-right: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #0f172a;
+  cursor: pointer;
+}

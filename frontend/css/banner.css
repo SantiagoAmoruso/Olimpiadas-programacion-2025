@@ -21,6 +21,7 @@
 }
 
 .banner::after {
+  pointer-events: none;
   content: "";
   position: absolute;
   bottom: 0;
@@ -28,5 +29,5 @@
   right: 0;
   height: 100px;
   background: linear-gradient(to top, black, transparent);
-  z-index: 0;
+  z-index: 1;
 }
