@@ -1,0 +1,38 @@
+.consulta-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #00bcd4;
+  border-radius: 10px;
+  background-color: #f8fcfe;
+}
+
+.consulta-section h2 {
+  text-align: center;
+  color: #00bcd4;
+}
+
+#consulta-form input,
+#consulta-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#consulta-form button {
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+#consulta-form button:hover {
+  background-color: #0097a7;
+}

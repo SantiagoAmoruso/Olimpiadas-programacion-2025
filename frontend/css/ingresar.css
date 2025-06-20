@@ -1,0 +1,101 @@
+
+body {
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.079) 60%, rgb(0, 0, 0) 100%),
+    url('../img/fondo.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+    header {
+      height: 80px;
+      width: 100%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+    
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+
+    }
+ 
+    .logo{
+          margin: 0;
+  font-size: 24px;
+  color: #333;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .form-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    form button {
+      width: 50%;
+      padding: 12px;
+      margin-top: 15px;
+      background-color: #000000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #0097a7;
+    }
+
+    .login-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-link a {
+      color: #00bcd4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+

@@ -1,0 +1,89 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.assistance-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #000000; 
+  margin-bottom: 30px;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 60%;
+  padding: 12px;
+  border: 2px solid #00bcd4;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 12px 20px;
+  background-color: #00bcd4;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-button:hover {
+  background-color: #0097a7;
+}
+
+.faq-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 4px solid #00bcd4;
+  background-color: #f9f9f9;
+}
+
+.faq-item h3 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #f0f8fa;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact-button {
+  margin-top: 15px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-button:hover {
+  background-color: #333333;
+}
