@@ -1,0 +1,97 @@
+ .container {
+      max-width: 50%;
+      margin: 40px auto;
+      background: rgb(255, 255, 255);
+      
+      text-decoration: none;
+    }
+
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #00AEEF;
+      padding-bottom: 20px;
+      color: #0F172A;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      
+      text-decoration: none;
+    }
+
+    th, td {
+      text-align: center;
+      padding: 15px;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      color: #0F172A;
+      
+    }
+
+    .cantidad-btn {
+      padding: 5px 10px;
+      margin: 0 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .acciones {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .acciones span {
+      min-width: 20px;
+      display: inline-block;
+    }
+
+    .eliminar {
+      color: #0F172A;
+      cursor: pointer;
+    }
+
+    .botones {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      color: #0F172A;
+    }
+
+    .botones button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 18px;
+      cursor: pointer;
+      border: 1px solid #0F172A;
+      
+      color: #0F172A;
+    }
+
+    .seguir {
+        
+     
+      background-color: rgb(255, 255, 255);
+      color: #0F172A;
+    }
+
+    .comprar {
+        
+      
+      background-color: #ffffff;
+      color: #0F172A;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+

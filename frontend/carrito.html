@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="css/carrusel.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/carrito.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Carrito</title>
 </head>
 <body>
      <header>
 <nav class="menu">
   <div class="menu-logo">
-    <a href="#"><img src="./img/Logo/compassairlines 1.png" alt=""></a>
+    <a href="index.html"><img src="./img/Logo/compassairlines 1.png" alt=""></a>
   </div>
   <ul class="menu-items">
     <li><a href="vuelos.html"><img src="svg/plane-solid.svg">  Vuelos</a></li>
     <li><a href="index.html"><img src="svg/suitcase-solid.svg">Paquetes</a></li>
     <li><a href="traslado.html"><img src="svg/truck-solid.svg">Traslados</a></li>
     <li><a href="asistencia.html"><img src="svg/suitcase-medical-solid.svg">Asistencia</a></li>
-    <li><a href="#"><img src="svg/cart-shopping-solid.svg">Carrito</a></li>
+    <li><a href="carrito.html"><img src="svg/cart-shopping-solid.svg">Carrito</a></li>
   </ul>
   <div class="menu-login">
     <a href="ingresar.html">Log in</a>
@@ -102,15 +104,65 @@
 </section>
         
 
-<section>
-     <div><h2>Carrito</h2></div>
+<section class="container">
+     
+    <h2>Carrito</h2>
+    <table id="carrito">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-precio="100" data-moneda="USD">
+          <td>Producto 1</td>
+          <td>$100 USD</td>
+          <td class="acciones">
+            <button class="cantidad-btn restar">−</button>
+            <span class="cantidad">0</span>
+            <button class="cantidad-btn sumar">+</button>
+          </td>
+          <td class="subtotal">$0 USD</td>
+          <td><i class="fas fa-trash eliminar"></i></td>
+        </tr>
+        <tr data-precio="15000" data-moneda="ARS">
+          <td>Producto 2</td>
+          <td>$15.000 ARS</td>
+          <td class="acciones">
+            <button class="cantidad-btn restar">−</button>
+            <span class="cantidad">0</span>
+            <button class="cantidad-btn sumar">+</button>
+          </td>
+          <td class="subtotal">$0 ARS</td>
+          <td><i class="fas fa-trash eliminar"></i></td>
+        </tr>
+        <tr data-precio="50" data-moneda="EUR">
+          <td>Producto 3</td>
+          <td>€50 EUR</td>
+          <td class="acciones">
+            <button class="cantidad-btn restar">−</button>
+            <span class="cantidad">0</span>
+            <button class="cantidad-btn sumar">+</button>
+          </td>
+          <td class="subtotal">€0 EUR</td>
+          <td><i class="fas fa-trash eliminar"></i></td>
+        </tr>
+      </tbody>
+    </table>
 
-     <div>
-     <div>
+    <div class="total" id="total">Total: $0 ARS</div>
 
-     </div>
+    <div class="botones">
+      <button class="seguir"  ><a href="vuelos.html" style="text-decoration: none; color: 0F172A;"><i class="fas fa-arrow-left"></i> Seguir comprando</a></button>
+      <button class="comprar"><i class="fas fa-shopping-cart"></i> Comprar</button>
     </div>
-
+ 
 </section>
+
 </body>
+<script src="js/carrito.js"></script>
 </html>
