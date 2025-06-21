@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnBuscar = document.createElement("button");
     btnBuscar.className = "btn"
     btnBuscar.innerHTML = `
-        <div class="icono"><img src="svg/buscador/plane-departure-solid.svg" alt=""></div>
+        <div class="icono"><img src="../svg/buscador/plane-departure-solid.svg" alt=""></div>
         <p>Buscar</p>
     `
 
@@ -95,17 +95,17 @@ function agregarTramo(esPrimerTramo = false) {
         <div>
           <label for="">Origen</label>
           <div class="inputs">
-            <div class="icono"><img src="svg/buscador/xmark-solid.svg" alt=""></div>
+            <div class="icono"><img src="../svg/buscador/xmark-solid.svg" alt=""></div>
             <input type="text" placeholder="Ingrese origen" id="origen">
           </div>
         </div>
         <button class="icono btn-intercambio">
-            <img src="svg/buscador/arrow-right-arrow-left-solid.svg">
+            <img src="../svg/buscador/arrow-right-arrow-left-solid.svg">
             </button>
         <div>
           <label for="">Destino</label>
           <div class="inputs">
-            <div class="icono"><img src="svg/buscador/location-dot-solid.svg" alt=""></div>
+            <div class="icono"><img src="../svg/buscador/location-dot-solid.svg" alt=""></div>
             <input type="text" placeholder="Ingrese destino" id="destino">
           </div>
         </div>
@@ -113,7 +113,7 @@ function agregarTramo(esPrimerTramo = false) {
     <div class="contenedorFechas">
       <label>Fecha</label>
       <div class="inputs">
-        <div class="icono"><img src="svg/buscador/calendar-days-solid.svg"></div>
+        <div class="icono"><img src="../svg/buscador/calendar-days-solid.svg"></div>
         <input type="date">
       </div>
     </div>

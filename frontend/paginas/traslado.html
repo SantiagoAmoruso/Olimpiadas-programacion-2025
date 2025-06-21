@@ -1,0 +1,140 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Logo/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/traslado.css">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Traslado</title>
+</head>
+<body>
+            <header>
+<nav class="menu">
+  <div class="menu-logo">
+    <a href="../index.html"><img src="../img/Logo/compassairlines 1.png" alt=""></a>
+  </div>
+  <ul class="menu-items">
+    <li><a href="vuelos.html"><img src="../svg/plane-solid.svg">  Vuelos</a></li>
+    <li><a href="paquetes.html"><img src="../svg/suitcase-solid.svg">Paquetes</a></li>
+    <li><a href="traslado.html"  style="filter: brightness(900%);color: #0EA5E9; border-bottom: 2px solid #0EA5E9;"><img src="../svg/truck-solid.svg">Traslados</a></li>
+    <li><a href="asistencia.html"><img src="../svg/suitcase-medical-solid.svg">Asistencia</a></li>
+    <li><a href="carrito.html"><img src="../svg/cart-shopping-solid.svg">Carrito</a></li>
+  </ul>
+  <div class="menu-login">
+    <a href="ingresar.html">Log in</a>
+  </div>
+</nav>
+    </header>
+    <section class="banner">
+      <div class="buscador">
+
+        <div class="tipos">
+          <button class="tipo-btn activo" data-tipo="idaVuelta">Ida y vuelta</button>
+          <button class="tipo-btn" data-tipo="soloIda">Solo ida</button>
+          <button class="tipo-btn" data-tipo="multidestino">Multidestino</button>
+        </div>
+    
+        <div class="formulario">
+    
+          <div class="desdeDonde">
+            <div>
+              <label for="">Origen</label>
+              <div class="inputs">
+                <div class="icono"><img src="../svg/buscador/xmark-solid.svg" alt=""></div>
+                <input type="text" placeholder="Ingrese origen" id="origen">
+              </div>
+            </div>
+            <button class="icono btn-intercambio" onclick="pasarValor()"><img src="../svg/buscador/arrow-right-arrow-left-solid.svg"></button>
+            <div>
+              <label for="">Destino</label>
+              <div class="inputs">
+                <div class="icono"><img src="../svg/buscador/location-dot-solid.svg" alt=""></div>
+                <input type="text" placeholder="Ingrese destino" id="destino">
+              </div>
+            </div>
+          </div>
+    
+          <div class="contenedorFechas">
+            <div class="fechas" id="bloqueFechas">
+              <div>
+                  <label for="" id="Ida">Ida</label>
+                  <div class="inputs">
+                    <div class="icono"><img src="../svg/buscador/calendar-days-solid.svg" alt=""></div>
+                    <input type="date" placeholder="Ida">
+                  </div>
+              </div>
+              <div id="vuelta">
+                  <label for="">Vuelta</label>
+                  <div class="inputs">
+                    <div class="icono"><img src="../svg/buscador/calendar-days-solid.svg" alt=""></div>
+                    <input type="date" placeholder="Vuelta">
+                  </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="pasajerosClase" id="pasajerosClase">
+            <label for="">Pasajeros y clase</label>
+            <div class="inputs">
+              <div class="icono"><img src="../svg/buscador/user-solid.svg" alt=""></div>
+              <label>1 persona, Economica</label>
+            </div>
+          </div>
+    
+          <div class="btn-contenedor">
+            <button class="btn" id="Buscar">
+              <div class="icono"><img src="../svg/buscador/plane-departure-solid.svg" alt=""></div>
+              <p>Buscar</p>
+            </button>
+          </div>
+        </div>
+          <div id="multidestinoExtra">
+          </div>
+      </div>
+    </section>
+    <hr>
+
+
+  <div class="traslados-container">
+    <h1 class="page-title">Reservá tu traslado</h1>
+
+    <div class="traslado-form">
+      <div class="form-group">
+        <label for="origen">Desde</label>
+        <input type="text" id="origen" placeholder="Ej: Aeropuerto Ezeiza">
+      </div>
+
+      <div class="form-group">
+        <label for="destino">Hasta</label>
+        <input type="text" id="destino" placeholder="Ej: Hotel en Buenos Aires">
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha">
+      </div>
+
+      <div class="form-group">
+        <label for="pasajeros">Pasajeros</label>
+        <input type="number" id="pasajeros" min="1" value="1">
+      </div>
+
+      <button class="buscar-btn">Buscar Traslados</button>
+    </div>
+
+    <div class="info-section">
+      <h2>¿Por qué reservar con nosotros?</h2>
+      <ul>
+        <li>✔️ Precios transparentes, sin sorpresas</li>
+        <li>✔️ Traslados privados y compartidos</li>
+        <li>✔️ Asistencia 24/7</li>
+      </ul>
+    </div>
+  </div>
+  <script src="../js/buscador.js"></script>
+</body>
+
+</html>
