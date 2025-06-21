@@ -124,24 +124,43 @@ hr {
   margin: 20px 0;
 }
 
-.btn-social {
+.btn-social.custom {
   width: 100%;
   border: 2px solid #000;
-  border-radius: 12px;
-  padding: 10px;
-  font-size: 14px;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 15px;
   background: white;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.btn-social i {
-  font-size: 16px;
+.btn-social.custom i {
+  font-size: 18px;
 }
+
+/* Opcional: estilos específicos */
+.btn-social.google i {
+  color: #000000;
+}
+
+.btn-social.facebook i {
+  color: #000000;
+}
+
+.btn-social.custom:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.02);
+}
+
 
 .terms {
   font-size: 11px;

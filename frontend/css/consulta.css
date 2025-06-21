@@ -36,3 +36,14 @@
 #consulta-form button:hover {
   background-color: #0097a7;
 }
+
+header {
+  width: 100%;
+  background: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 40px;
+}

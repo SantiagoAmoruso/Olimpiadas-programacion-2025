@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/asistencia.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/buscador.css">
+    <link rel="stylesheet" href="css/banner.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,7 +13,7 @@
             <header>
 <nav class="menu">
   <div class="menu-logo">
-    <a href="#">LOGO</a>
+    <a href="index.html"><img src="img/Logo/compassairlines 1.png"></a>
   </div>
   <ul class="menu-items">
     <li><a href="vuelos.html"><img src="svg/plane-solid.svg">  Vuelos</a></li>
@@ -21,12 +23,79 @@
     <li><a href="#"><img src="svg/cart-shopping-solid.svg">Carrito</a></li>
   </ul>
   <div class="menu-login">
-    <a href="ingresar.html">Log in</a>
+    <a href="ingresar.html">Login</a>
   </div>
 </nav>
     </header>
-<hr>
 
+
+<section class="banner">
+  <div class="buscador">
+
+    <div class="tipos">
+      <button class="tipo-btn activo" data-tipo="idaVuelta">Ida y vuelta</button>
+      <button class="tipo-btn" data-tipo="soloIda">Solo ida</button>
+      <button class="tipo-btn" data-tipo="multidestino">Multidestino</button>
+    </div>
+
+    <div class="formulario">
+
+      <div class="desdeDonde">
+        <div>
+          <label for="">Origen</label>
+          <div class="inputs">
+            <div class="icono"><img src="svg/buscador/xmark-solid.svg" alt=""></div>
+            <input type="text" placeholder="Ingrese origen" id="origen">
+          </div>
+        </div>
+        <button class="icono btn-intercambio" onclick="pasarValor()"><img src="svg/buscador/arrow-right-arrow-left-solid.svg"></button>
+        <div>
+          <label for="">Destino</label>
+          <div class="inputs">
+            <div class="icono"><img src="svg/buscador/location-dot-solid.svg" alt=""></div>
+            <input type="text" placeholder="Ingrese destino" id="destino">
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedorFechas">
+        <div class="fechas" id="bloqueFechas">
+          <div>
+              <label for="" id="Ida">Ida</label>
+              <div class="inputs">
+                <div class="icono"><img src="svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <input type="date" placeholder="Ida">
+              </div>
+          </div>
+          <div id="vuelta">
+              <label for="">Vuelta</label>
+              <div class="inputs">
+                <div class="icono"><img src="svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <input type="date" placeholder="Vuelta">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pasajerosClase" id="pasajerosClase">
+        <label for="">Pasajeros y clase</label>
+        <div class="inputs">
+          <div class="icono"><img src="svg/buscador/user-solid.svg" alt=""></div>
+          <label>1 persona, Economica</label>
+        </div>
+      </div>
+
+      <div class="btn-contenedor">
+        <button class="btn" id="Buscar">
+          <div class="icono"><img src="svg/buscador/plane-departure-solid.svg" alt=""></div>
+          <p>Buscar</p>
+        </button>
+      </div>
+    </div>
+      <div id="multidestinoExtra">
+      </div>
+  </div>
+</section>
   <div class="assistance-container">
     <h1 class="title">Centro de Asistencia</h1>
     <div class="search-section">
@@ -56,5 +125,7 @@
      <a href="consulta.html"> <button class="contact-button">Contactar Soporte</button> </a>    </div>
   </div>
 <script src="js/asistencia.js"></script>
+
+<script src="js/buscador.js"></script>
 </body>
 </html>
