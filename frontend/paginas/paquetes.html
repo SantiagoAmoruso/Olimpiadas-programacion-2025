@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../css/buscador.css">
+    <link rel="stylesheet" href="../css/paquete.css">
+    <link rel="stylesheet" href="../css/banner.css">
+    <link rel="stylesheet" href="../css/carrusel.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/general.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Paquetes</title>
+</head>
+<body>
+    <header>
+<nav class="menu">
+  <div class="menu-logo">
+    <a href="../index.html"><img src="../img/Logo/compassairlines 1.png" alt=""></a>
+  </div>
+  <ul class="menu-items">
+   <li><a href="vuelos.html"><img src="../svg/plane-solid.svg">  Vuelos</a></li>
+    <li><a href="paquetes.html"><img src="../svg/suitcase-solid.svg">Paquetes</a></li>
+    <li><a href="traslado.html"><img src="../svg/truck-solid.svg">Traslados</a></li>
+    <li><a href="asistencia.html"><img src="../svg/suitcase-medical-solid.svg">Asistencia</a></li>
+    <li><a href="#"><img src="../svg/cart-shopping-solid.svg">Carrito</a></li>
+  </ul>
+  <div class="menu-login">
+    <a href="../paginas/ingresar.html">Log in</a>
+  </div>
+</nav>
+    </header>
+
+     <main>
+
+<section class="banner">
+  <div class="buscador">
+
+    <div class="tipos">
+      <button class="tipo-btn activo" data-tipo="idaVuelta">Ida y vuelta</button>
+      <button class="tipo-btn" data-tipo="soloIda">Solo ida</button>
+      <button class="tipo-btn" data-tipo="multidestino">Multidestino</button>
+    </div>
+
+    <div class="formulario">
+
+      <div class="desdeDonde">
+        <div>
+          <label for="">Origen</label>
+          <div class="inputs">
+            <div class="icono"><img src="../svg/buscador/xmark-solid.svg" alt=""></div>
+            <input type="text" placeholder="Ingrese origen" id="origen">
+          </div>
+        </div>
+        <button class="icono btn-intercambio" onclick="pasarValor()"><img src="../svg/buscador/arrow-right-arrow-left-solid.svg"></button>
+        <div>
+          <label for="">Destino</label>
+          <div class="inputs">
+            <div class="icono"><img src="../svg/buscador/location-dot-solid.svg" alt=""></div>
+            <input type="text" placeholder="Ingrese destino" id="destino">
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedorFechas">
+        <div class="fechas" id="bloqueFechas">
+          <div>
+              <label for="" id="Ida">Ida</label>
+              <div class="inputs">
+                <div class="icono"><img src="../svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <input type="date" placeholder="Ida">
+              </div>
+          </div>
+          <div id="vuelta">
+              <label for="">Vuelta</label>
+              <div class="inputs">
+                <div class="icono"><img src="../svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <input type="date" placeholder="Vuelta">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pasajerosClase" id="pasajerosClase">
+        <label for="">Pasajeros y clase</label>
+        <div class="inputs">
+          <div class="icono"><img src="../svg/buscador/user-solid.svg" alt=""></div>
+          <label>1 persona, Economica</label>
+        </div>
+      </div>
+
+      <div class="btn-contenedor">
+        <button class="btn" id="Buscar">
+          <div class="icono"><img src="../svg/buscador/plane-departure-solid.svg" alt=""></div>
+          <p>Buscar</p>
+        </button>
+      </div>
+    </div>
+      <div id="multidestinoExtra">
+      </div>
+  </div>
+</section>
+
+<section class="paquete">
+    <div class="subtitulo">
+    <h1>Paquetes</h1>
+    </div>
+     <nav class="hrr">
+    <hr>
+     </nav>
+    <article class="destino">
+
+      <!-- tarjeta info-->
+     <nav class="target-info">
+     <h4>¡Nueva ruta!</h4>
+    <h2>¡Nos vemos en Miami!<br>Comprá tu Paquete y viajá directo</h2>
+    <p><span class="emoji">👉</span>Ruta directa desde Ezeiza</p>
+    <p><span class="emoji">👉</span>Para viajar desde Diciembre</p>
+     </nav>
+    
+     <!-- primer tarjeta de meameeee-->
+     <div class="viaje-info">
+     <div class="image-dias">
+      <img src="../img/packMiami/miami 1.jpg" alt="Miami">
+      <div class="estadia"> 15 días / 14 noches </div>
+      </div>
+        <div class="contenido-pack">
+        <div class="categoria">PAQUETE</div>
+        <div class="titulo">Paquetes a Miami</div>
+        <div class="calificacion">
+            <span>8.4</span>
+            <div class="estrellas">★ ★ ★</div>
+        </div>
+        <div class="detalles">Saliendo desde Buenos Aires<br>Hotel + Vuelo</div>
+      </div>
+      <div class="seccion-precio">
+        Precio final por persona
+        <span>$ 2.440.396</span>
+    </div>
+     </div>
+      <!-- seunga tarjeta -->
+     <div class="viaje-info">
+       <div class="image-dias">
+      <img src="../img/packMiami/miami 2.jpg" alt="Miami">
+      <div class="estadia"> 15 días / 14 noches </div>
+      </div>
+        <div class="contenido-pack">
+        <div class="categoria">PAQUETE</div>
+        <div class="titulo">Paquetes a Miami</div>
+        <div class="calificacion">
+            <span>8.6</span>
+            <div class="estrellas">★ ★ ★</div>
+        </div>
+        <div class="detalles">Saliendo desde Buenos Aires<br>Hotel + Vuelo</div>
+      </div>
+      <div class="seccion-precio">
+        Precio final por persona
+        <span>$ 2.336.396</span>
+    </div>
+     </div>
+     
+      <!-- tarjeta botoon-->
+     <div class="viaje-info boton-miami" >
+        <a href="">
+      <div class="circulo-boton">&gt;</div>
+        <div class="texto">¡Más Paquetes a Miami!</div>
+        </a>
+     </div>
+     
+    </article>
+
+
+</section>
+ <!-- segundo paquete -->
+<section class="paquete">
+    
+    <article class="destino">
+
+      <!-- tarjeta info-->
+     <nav class="target-info latam">
+     <h4>Salidas desde el interior</h4>
+    <h2>¡Viajá desde<br>Córdoba,<br>Mendoza, Salta y<br>Rosario!</h2>
+    <p>LATAM Pass</p>
+    
+     </nav>
+    
+     <!-- primer tarjeta interior-->
+     <div class="viaje-info">
+     <div class="image-dias">
+      <img src="../img/Interior/rio de janeiro.jpg" alt="Rio de Janeiro">
+      <div class="estadia"> 9 días / 8 noches </div>
+      </div>
+        <div class="contenido-pack">
+        <div class="categoria">PAQUETE</div>
+        <div class="titulo">Paquetes a Rio de Janeiro</div>
+        <div class="calificacion"> 
+            <span>8.7</span>
+            <div class="estrellas">★ ★ ★ ★ ★</div>
+        </div>
+        <div class="detalles">Saliendo desde Córdoba<br>Hotel + Vuelo</div>
+      </div>
+      <div class="seccion-precio">
+        Precio final por persona
+        <span>$ 788.208</span>
+    </div>
+     </div>
+      <!-- seunga tarjeta -->
+     <div class="viaje-info">
+       <div class="image-dias">
+      <img src="../img/Interior/cancun.jpg" alt="Cancun">
+      <div class="estadia"> 7 días / 6 noches </div>
+      </div>
+        <div class="contenido-pack">
+        <div class="categoria">PAQUETE</div>
+        <div class="titulo">Paquetes a Cancún </div>
+        <div class="calificacion">
+            <span>7.2</span>
+            <div class="estrellas">★ ★ ★</div>
+        </div>
+        <div class="detalles">Saliendo desde Córdoba<br>Hotel + Vuelo </div>
+      </div>
+      <div class="seccion-precio">
+        Precio final por persona
+        <span>$ 1.808.230</span>
+    </div>
+     </div>
+     
+      <!-- tercer tarjeta-->
+     <div class="viaje-info">
+       <div class="image-dias">
+      <img src="../img/Interior/punta cana.jpg" alt="Punta cana">
+      <div class="estadia"> 7 días / 6 noches </div>
+      </div>
+        <div class="contenido-pack">
+        <div class="categoria">PAQUETE</div>
+        <div class="titulo">Paquetes a Punta Cana</div>
+        <div class="calificacion">
+            <span>8.0</span>
+            <div class="estrellas">★ ★ ★ ★</div>
+        </div>
+        <div class="detalles">Saliendo desde Mendoza<br>Hotel + Vuelo + drink de corte</div>
+      </div>
+      <div class="seccion-precio">
+        Precio final por persona
+        <span>$ 1.556.475</span>
+    </div>
+     </div>
+     
+    </article>
+
+
+</section>
+
+
+
+
+    </main>
+<script src="../js/buscador.js"></script>
+</body>
+</html>
