@@ -1,56 +1,35 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('carousel-track');
+  const cards = Array.from(track.children);
+  const leftButton = document.querySelector('.arrow.left');
+  const rightButton = document.querySelector('.arrow.right');
 
-  const track = document.getElementById("carousel-track");
-  const leftBtn = document.querySelector(".arrow.left");
-  const rightBtn = document.querySelector(".arrow.right");
+  const cardWidth = cards[0].offsetWidth + 20; // Ancho + gap
+  let currentIndex = 0;
 
-  let cardWidth = 0;
-  let cardsPerPage = 3;
+  function updateCarousel() {
+    const newTransform = -currentIndex * cardWidth;
+    track.style.transform = `translateX(${newTransform}px)`;
+  }
 
-
-  const initInfiniteCarousel = () => {
-    const cards = track.children;
-    cardWidth = cards[0].offsetWidth + 20; 
-
-    const total = cards.length;
-    for (let i = 0; i < cardsPerPage; i++) {
-      const firstClone = cards[i].cloneNode(true);
-      const lastClone = cards[total - 1 - i].cloneNode(true);
-      track.appendChild(firstClone);
-      track.insertBefore(lastClone, track.firstChild);
+  rightButton.addEventListener('click', () => {
+    currentIndex++;
+    if (currentIndex >= cards.length) {
+      currentIndex = 0; // Reinicia al principio
     }
-
- 
-    track.style.transform = `translateX(-${cardWidth * cardsPerPage}px)`;
-  };
-
-  let index = cardsPerPage;
-
-  const moveCarousel = (direction) => {
-    index += direction;
-    track.style.transition = 'transform 0.5s ease';
-    track.style.transform = `translateX(-${cardWidth * index}px)`;
-
-    track.addEventListener('transitionend', () => {
-      if (index <= 0) {
-        track.style.transition = 'none';
-        index = track.children.length - (cardsPerPage * 2);
-        track.style.transform = `translateX(-${cardWidth * index}px)`;
-      }
-      if (index >= track.children.length - cardsPerPage) {
-        track.style.transition = 'none';
-        index = cardsPerPage;
-        track.style.transform = `translateX(-${cardWidth * index}px)`;
-      }
-    }, { once: true });
-  };
-
-  rightBtn.addEventListener("click", () => moveCarousel(1));
-  leftBtn.addEventListener("click", () => moveCarousel(-1));
-
-  window.addEventListener("load", initInfiniteCarousel);
-  window.addEventListener("resize", () => {
-    cardWidth = track.children[0].offsetWidth + 20;
-    track.style.transition = 'none';
-    track.style.transform = `translateX(-${cardWidth * index}px)`;
+    updateCarousel();
   });
 
+  leftButton.addEventListener('click', () => {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = cards.length - 1; // Va al final
+    }
+    updateCarousel();
+  });
+
+  // En caso de que cambie el tamaño de la ventana
+  window.addEventListener('resize', () => {
+    updateCarousel(); // Recalcula en función del nuevo ancho
+  });
+});

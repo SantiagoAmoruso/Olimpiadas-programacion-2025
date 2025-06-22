@@ -74,3 +74,8 @@
   box-shadow: 0 10px 20px rgba(14, 35, 38, 0.3);
   transform: scale(1.02);
 }
+
+.menu-logo{
+
+ overflow-y: hidden;
+}
