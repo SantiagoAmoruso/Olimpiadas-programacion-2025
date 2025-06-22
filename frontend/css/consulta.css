@@ -2,14 +2,14 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
-  border: 1px solid #00bcd4;
+  border: 1px solid #96C7DD;
   border-radius: 10px;
-  background-color: #f8fcfe;
+  background-color: #ffffff;
 }
 
 .consulta-section h2 {
   text-align: center;
-  color: #00bcd4;
+  color: #51BCED;
 }
 
 #consulta-form input,
@@ -17,13 +17,13 @@
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #B9B4B4;
   border-radius: 8px;
   font-size: 16px;
 }
 
 #consulta-form button {
-  background-color: #00bcd4;
+  background-color: #51BCED;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -34,5 +34,18 @@
 }
 
 #consulta-form button:hover {
-  background-color: #0097a7;
+  background-color: #469dc5;
+}
+header {
+  width: 100%;
+  background: #F9FAFB;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.logo {
+  height: 40px;
+}
+body{
+  background-color: #F9FAFB;
 }
