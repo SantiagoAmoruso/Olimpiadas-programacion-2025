@@ -1,35 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.getElementById('carousel-track');
+  if (!track) return;
+
   const cards = Array.from(track.children);
   const leftButton = document.querySelector('.arrow.left');
   const rightButton = document.querySelector('.arrow.right');
 
-  const cardWidth = cards[0].offsetWidth + 20; // Ancho + gap
+  if (cards.length === 0 || !leftButton || !rightButton) return;
+
   let currentIndex = 0;
 
+  function getCardWidth() {
+    return cards[0].offsetWidth + 20; // Incluye el gap
+  }
+
   function updateCarousel() {
-    const newTransform = -currentIndex * cardWidth;
+    const newTransform = -currentIndex * getCardWidth();
     track.style.transform = `translateX(${newTransform}px)`;
   }
 
   rightButton.addEventListener('click', () => {
-    currentIndex++;
-    if (currentIndex >= cards.length) {
-      currentIndex = 0; // Reinicia al principio
-    }
+    currentIndex = (currentIndex + 1) % cards.length;
     updateCarousel();
   });
 
   leftButton.addEventListener('click', () => {
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = cards.length - 1; // Va al final
-    }
+    currentIndex = (currentIndex - 1 + cards.length) % cards.length;
     updateCarousel();
   });
 
-  // En caso de que cambie el tamaño de la ventana
-  window.addEventListener('resize', () => {
-    updateCarousel(); // Recalcula en función del nuevo ancho
-  });
+  window.addEventListener('resize', updateCarousel);
 });
