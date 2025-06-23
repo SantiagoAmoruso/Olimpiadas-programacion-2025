@@ -15,10 +15,11 @@ body {
 
     .contenedor-hoteles {
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: center;
       gap: 2rem;
       padding: 2rem;
+      width: 50%;
     }
 
     .tarjeta-hotel {
