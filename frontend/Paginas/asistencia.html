@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/asistencia.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/buscador.css">
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="frontend/css/asistencia.css">
+    <link rel="stylesheet" href="frontend/css/menu.css">
+    <link rel="stylesheet" href="frontend/css/buscador.css">
+    <link rel="stylesheet" href="frontend/css/banner.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,14 +13,14 @@
             <header>
 <nav class="menu">
   <div class="menu-logo">
-    <a href="index.html"><img src="img/Logo/compassairlines 1.png"></a>
+    <a href="index.html"><img src="frontend/img/Logo/compassairlines 1.png"></a>
   </div>
   <ul class="menu-items">
-    <li><a href="vuelos.html"><img src="svg/plane-solid.svg">  Vuelos</a></li>
-    <li><a href="index.html"><img src="svg/suitcase-solid.svg">Paquetes</a></li>
-    <li><a href="traslado.html"><img src="svg/truck-solid.svg">Traslados</a></li>
-    <li><a href="asistencia.html"><img src="svg/suitcase-medical-solid.svg">Asistencia</a></li>
-    <li><a href="#"><img src="svg/cart-shopping-solid.svg">Carrito</a></li>
+    <li><a href="vuelos.html"><img src="frontend/svg/plane-solid.svg">  Vuelos</a></li>
+    <li><a href="index.html"><img src="frontend/svg/suitcase-solid.svg">Paquetes</a></li>
+    <li><a href="traslado.html"><img src="frontend/svg/truck-solid.svg">Traslados</a></li>
+    <li><a href="asistencia.html"><img src="frontend/svg/suitcase-medical-solid.svg">Asistencia</a></li>
+    <li><a href="carrito.html"><img src="frontend/svg/cart-shopping-solid.svg">Carrito</a></li>
   </ul>
   <div class="menu-login">
     <a href="ingresar.html">Login</a>
@@ -44,15 +44,15 @@
         <div>
           <label for="">Origen</label>
           <div class="inputs">
-            <div class="icono"><img src="svg/buscador/xmark-solid.svg" alt=""></div>
+            <div class="icono"><img src="frontend/svg/buscador/xmark-solid.svg" alt=""></div>
             <input type="text" placeholder="Ingrese origen" id="origen">
           </div>
         </div>
-        <button class="icono btn-intercambio" onclick="pasarValor()"><img src="svg/buscador/arrow-right-arrow-left-solid.svg"></button>
+        <button class="icono btn-intercambio" onclick="pasarValor()"><img src="frontend/svg/buscador/arrow-right-arrow-left-solid.svg"></button>
         <div>
           <label for="">Destino</label>
           <div class="inputs">
-            <div class="icono"><img src="svg/buscador/location-dot-solid.svg" alt=""></div>
+            <div class="icono"><img src="frontend/svg/buscador/location-dot-solid.svg" alt=""></div>
             <input type="text" placeholder="Ingrese destino" id="destino">
           </div>
         </div>
@@ -63,14 +63,14 @@
           <div>
               <label for="" id="Ida">Ida</label>
               <div class="inputs">
-                <div class="icono"><img src="svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <div class="icono"><img src="frontend/svg/buscador/calendar-days-solid.svg" alt=""></div>
                 <input type="date" placeholder="Ida">
               </div>
           </div>
           <div id="vuelta">
               <label for="">Vuelta</label>
               <div class="inputs">
-                <div class="icono"><img src="svg/buscador/calendar-days-solid.svg" alt=""></div>
+                <div class="icono"><img src="frontend/svg/buscador/calendar-days-solid.svg" alt=""></div>
                 <input type="date" placeholder="Vuelta">
               </div>
           </div>
@@ -80,14 +80,14 @@
       <div class="pasajerosClase" id="pasajerosClase">
         <label for="">Pasajeros y clase</label>
         <div class="inputs">
-          <div class="icono"><img src="svg/buscador/user-solid.svg" alt=""></div>
+          <div class="icono"><img src="frontend/svg/buscador/user-solid.svg" alt=""></div>
           <label>1 persona, Economica</label>
         </div>
       </div>
 
       <div class="btn-contenedor">
         <button class="btn" id="Buscar">
-          <div class="icono"><img src="svg/buscador/plane-departure-solid.svg" alt=""></div>
+          <div class="icono"><img src="frontend/svg/buscador/plane-departure-solid.svg" alt=""></div>
           <p>Buscar</p>
         </button>
       </div>
@@ -124,8 +124,8 @@
       <p>Contactate con nuestro equipo de soporte.</p>
      <a href="consulta.html"> <button class="contact-button">Contactar Soporte</button> </a>    </div>
   </div>
-<script src="js/asistencia.js"></script>
+<script src="frontend/js/asistencia.js"></script>
 
-<script src="js/buscador.js"></script>
+<script src="frontend/js/buscador.js"></script>
 </body>
 </html>
