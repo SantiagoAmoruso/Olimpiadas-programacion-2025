@@ -36,16 +36,10 @@
 #consulta-form button:hover {
   background-color: #469dc5;
 }
-<<<<<<< HEAD
-header {
-  width: 100%;
-  background: #F9FAFB;
-=======
 
 header {
   width: 100%;
-  background: white;
->>>>>>> 7d5db2d2b6276c1f8238a38142e62a2adf947adc
+  background: #F9FAFB;
   padding: 10px 20px;
   text-align: center;
 }
@@ -53,9 +47,4 @@ header {
 .logo {
   height: 40px;
 }
-<<<<<<< HEAD
-body{
-  background-color: #F9FAFB;
-}
-=======
->>>>>>> 7d5db2d2b6276c1f8238a38142e62a2adf947adc
+
